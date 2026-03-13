@@ -1,0 +1,103 @@
+/* ===== Global Background ===== */
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #5d719b;
+}
+
+/* ===== Center Layout ===== */
+
+.counter-center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Counter Card ===== */
+
+.counter-card {
+  background: #ffffff;
+  padding: 60px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+  text-align: center;
+  min-width: 380px;
+}
+
+/* ===== Counter Number ===== */
+
+.counter-value {
+  font-size: 80px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 40px;
+}
+
+/* ===== Button Container ===== */
+
+.counter-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ===== Base Button Style ===== */
+
+.counter-btn {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 18px 36px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* ===== Increment Button ===== */
+
+.increment {
+  background: #2563eb;
+  color: white;
+}
+
+.increment:hover {
+  background: #1e40af;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37,99,235,0.35);
+}
+
+/* ===== Decrement Button ===== */
+
+.decrement {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.decrement:hover {
+  background: #d1d5db;
+  transform: translateY(-3px);
+}
+
+/* ===== Reset Button ===== */
+
+.reset {
+  background: white;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.reset:hover {
+  background: #f0f4ff;
+  transform: translateY(-3px);
+}
+
+/* ===== Disabled Button ===== */
+
+.counter-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
